@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"id":"eb6d133b28e006a9","type":"file","file":"Pagina Inicial.md","x":-190,"y":-780,"width":400,"height":352,"color":"4"},
+		{"id":"c650962d6d175209","type":"text","text":"## Dados login\npara logar vai ser necessário\n- email\n- senha\npro resto dos dados cadastrais pode ser aqueles padrão, nome, data de nascimento endereço, cpf e numero","x":1040,"y":-951,"width":250,"height":391,"color":"3"},
+		{"id":"de52d56e97a7b3ca","type":"file","file":"Login e Cadastro.md","x":480,"y":-951,"width":400,"height":297,"color":"4"},
+		{"id":"ef0f73061fb931fd","type":"file","file":"Carrinho de Compras.md","x":-800,"y":-604,"width":400,"height":249,"color":"4"},
+		{"id":"9a037fb906460a22","type":"file","file":"Pagina de Produto.md","x":-540,"y":-1260,"width":400,"height":220,"color":"4"},
+		{"id":"e9910a63c321ccf5","type":"text","text":"## Dados\n\n- Nome do produto\n- categoria\n- preço\n\nnão sei, mas pode ter mais coisas","x":10,"y":-1277,"width":250,"height":255,"color":"3"},
+		{"id":"5076f5b7ddbaec35","type":"text","text":"# Projeto E-commerce com Vue","x":-225,"y":-122,"width":460,"height":60,"color":"5"},
+		{"id":"a423ebe071d3bbc1","type":"text","text":"provavelmente vai ser E-commerce de Jogos","x":10,"y":-280,"width":250,"height":60,"color":"3"},
+		{"id":"062231c574416c38","type":"text","text":"Figma para protótipo?","x":333,"y":-117,"width":227,"height":50,"color":"1"},
+		{"id":"31f8ce106e1466cd","type":"file","file":"Todos os Produtos.md","x":-760,"y":-122,"width":400,"height":402,"color":"4"},
+		{"id":"a32105cbb082ab28","type":"file","file":"Componentes pagina inicial.md","x":560,"y":-460,"width":400,"height":210,"color":"2"},
+		{"id":"af14eafb757fce14","type":"file","file":"Componente Produto.md","x":360,"y":79,"width":400,"height":255,"color":"2"},
+		{"id":"7f203c0c78b2ba84","type":"file","file":"Componentes Todos os produtos.md","x":-225,"y":40,"width":400,"height":200,"color":"2"},
+		{"id":"60a6a023f3f64f7b","type":"file","file":"NavBar.md","x":-165,"y":334,"width":400,"height":400,"color":"2"},
+		{"id":"4ed2c6312bf450fd","type":"file","file":"Componentes Carrinho de Compra.md","x":-1280,"y":-718,"width":400,"height":229,"color":"2"},
+		{"id":"bb0fce4de18272e3","x":-1040,"y":-1520,"width":400,"height":200,"color":"2","type":"file","file":"Componentes pagina de produto.md"},
+		{"id":"fd7e376e4cfa9cd3","x":212,"y":-394,"width":168,"height":60,"type":"text","text":"quase certeza"}
+	],
+	"edges":[
+		{"id":"93f0d9a9e8bd32f7","fromNode":"5076f5b7ddbaec35","fromSide":"top","toNode":"a423ebe071d3bbc1","toSide":"bottom"},
+		{"id":"ca8a8b9b630eae3e","fromNode":"eb6d133b28e006a9","fromSide":"right","toNode":"de52d56e97a7b3ca","toSide":"left","fromEnd":"arrow","color":"5"},
+		{"id":"aed4b38032dd051c","fromNode":"c650962d6d175209","fromSide":"left","toNode":"de52d56e97a7b3ca","toSide":"right"},
+		{"id":"9cdfb7135ec9d8e2","fromNode":"ef0f73061fb931fd","fromSide":"right","toNode":"eb6d133b28e006a9","toSide":"left","fromEnd":"arrow","color":"5"},
+		{"id":"80c4c9ee6306048e","fromNode":"eb6d133b28e006a9","fromSide":"top","toNode":"9a037fb906460a22","toSide":"bottom","fromEnd":"arrow","color":"5"},
+		{"id":"1fb72ee5e6f8d1b7","fromNode":"e9910a63c321ccf5","fromSide":"left","toNode":"9a037fb906460a22","toSide":"right"},
+		{"id":"008e7619a3c7af75","fromNode":"5076f5b7ddbaec35","fromSide":"right","toNode":"062231c574416c38","toSide":"left"},
+		{"id":"a9db53848fc90c20","fromNode":"ef0f73061fb931fd","fromSide":"top","toNode":"9a037fb906460a22","toSide":"bottom","fromEnd":"arrow","color":"5"},
+		{"id":"73b2cae9610c5c42","fromNode":"a32105cbb082ab28","fromSide":"top","toNode":"eb6d133b28e006a9","toSide":"right","toEnd":"none"},
+		{"id":"c18e8471954ffe03","fromNode":"31f8ce106e1466cd","fromSide":"top","toNode":"eb6d133b28e006a9","toSide":"bottom","fromEnd":"arrow","color":"5"},
+		{"id":"e1527e604720c093","fromNode":"af14eafb757fce14","fromSide":"top","toNode":"a32105cbb082ab28","toSide":"bottom"},
+		{"id":"a60b1aef6108e371","fromNode":"af14eafb757fce14","fromSide":"left","toNode":"7f203c0c78b2ba84","toSide":"right"},
+		{"id":"b5107246a3c6ed9d","fromNode":"7f203c0c78b2ba84","fromSide":"left","toNode":"31f8ce106e1466cd","toSide":"right"},
+		{"id":"5002589e6ab8bc04","fromNode":"4ed2c6312bf450fd","fromSide":"right","toNode":"ef0f73061fb931fd","toSide":"left"},
+		{"id":"402708058c9f96db","fromNode":"bb0fce4de18272e3","fromSide":"right","toNode":"9a037fb906460a22","toSide":"top"},
+		{"id":"0e8eda5aa330d27b","fromNode":"fd7e376e4cfa9cd3","fromSide":"bottom","toNode":"a423ebe071d3bbc1","toSide":"top"}
+	]
+}

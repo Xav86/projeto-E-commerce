@@ -1,0 +1,2 @@
+[[Pagina Inicial]]
+Possivelmente seria bom criar uma pagina que exiba todos os produtos e permita a pesquisa com filtros de categorias preços e demais coisas, isso centralizaria a consulta e deixaria a pagina inicial sendo mais como uma pagina de apresentação, ou até só uma pagina com toda a listagem de produtos mesmo, sem a parte de pagina especifica pra pesquisa, ou seja, funciona a pesquisa em ambos mas nessa é mais focada em mostrar os produtos
