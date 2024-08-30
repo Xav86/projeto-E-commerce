@@ -24,7 +24,7 @@ Para o Backend vou fazer uma api com node, e no front vou usar Vue.js com framew
 ### Gestão de Arquivos - Github
 Quanto a local que estarei guardando os arquivos é em um repositório do Github (provavelemnte onde você le isso agora), e para salvar os arquivos usarei Git. 
 
-### Extres
+### Extras
 Aqui vou citar outras ferramentas que usei que não encaixei nas outras categorias
  - [Chatgpt](https://chatgpt.com/) <- fazer revisão de código e ajudar com erros e bugs qual não domino.
  - [Postman](https://www.postman.com/) <- fazer as requisições pra api para verificar se a funcionalidade e respostas estão coretas.
