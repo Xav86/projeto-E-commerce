@@ -11,14 +11,11 @@
             "id": "286d0ea3aaf950c7",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Projeto-Vue.canvas",
-                "viewState": {
-                  "x": 281.7250316382222,
-                  "y": -471.0083481926248,
-                  "zoom": -1.032548906818781
-                }
+                "file": "Pagina Inicial.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -30,7 +27,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projeto-Vue.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projeto-Vue.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Projeto-Vue.canvas"
-              }
+              "state": {}
             }
           }
         ]
@@ -157,9 +151,11 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "286d0ea3aaf950c7",
+  "active": "ad999e5eb176afa9",
   "lastOpenFiles": [
     "Projeto-Vue.canvas",
+    "Pagina Inicial.md",
+    "Pagina de Produto.md",
     "Componentes pagina de produto.md",
     "Componetes pa.md",
     "Todos os Produtos.md",
@@ -168,8 +164,6 @@
     "Componentes Todos os produtos.md",
     "Componente Produto.md",
     "Componentes pagina inicial.md",
-    "Pagina Inicial.md",
-    "Pagina de Produto.md",
     "Carrinho de Compras.md",
     "Login e Cadastro.md",
     "Login",

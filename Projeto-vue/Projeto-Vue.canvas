@@ -16,7 +16,7 @@
 		{"id":"60a6a023f3f64f7b","type":"file","file":"NavBar.md","x":-165,"y":334,"width":400,"height":400,"color":"2"},
 		{"id":"4ed2c6312bf450fd","type":"file","file":"Componentes Carrinho de Compra.md","x":-1280,"y":-718,"width":400,"height":229,"color":"2"},
 		{"id":"bb0fce4de18272e3","x":-1040,"y":-1520,"width":400,"height":200,"color":"2","type":"file","file":"Componentes pagina de produto.md"},
-		{"id":"fd7e376e4cfa9cd3","x":212,"y":-394,"width":168,"height":60,"type":"text","text":"quase certeza"}
+		{"id":"fd7e376e4cfa9cd3","x":212,"y":-415,"width":168,"height":60,"type":"text","text":"quase certeza"}
 	],
 	"edges":[
 		{"id":"93f0d9a9e8bd32f7","fromNode":"5076f5b7ddbaec35","fromSide":"top","toNode":"a423ebe071d3bbc1","toSide":"bottom"},
