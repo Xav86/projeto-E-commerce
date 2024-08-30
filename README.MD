@@ -28,5 +28,3 @@ Quanto a local que estarei guardando os arquivos é em um repositório do Github
 Aqui vou citar outras ferramentas que usei que não encaixei nas outras categorias
  - [Chatgpt](https://chatgpt.com/) <- fazer revisão de código e ajudar com erros e bugs qual não domino.
  - [Postman](https://www.postman.com/) <- fazer as requisições pra api para verificar se a funcionalidade e respostas estão coretas.
-
-
