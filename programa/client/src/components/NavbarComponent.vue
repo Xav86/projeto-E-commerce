@@ -5,13 +5,11 @@
         <logoComponent />
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <linksComponent />
-          <div class="d-flex gap-2">
+          <form class="d-flex gap-2">
             <SearchComponent />
-            <form class="d-flex gap-2">
-              <cartButton />
-              <loginButton />
-            </form>
-          </div>
+            <cartButton />
+            <loginButton />
+          </form>
         </div>
       </div>
     </nav>

@@ -1,18 +1,20 @@
 <template>
   <div class="home">
     <NavbarComponent />
-    <h1>Oi</h1>
+    <CarouselComponent />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import NavbarComponent from '@/components/NavbarComponent.vue';
+import CarouselComponent from '@/components/CarouselComponent.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    NavbarComponent
+    NavbarComponent,
+    CarouselComponent
   }
 }
 </script>
