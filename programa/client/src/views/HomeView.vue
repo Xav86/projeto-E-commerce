@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <NavbarComponent />
-    <h1 class="is-size-1">Oi</h1>
+    <h1>Oi</h1>
   </div>
 </template>
 
@@ -16,3 +16,6 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+</style>
