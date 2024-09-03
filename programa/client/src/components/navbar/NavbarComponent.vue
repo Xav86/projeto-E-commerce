@@ -17,11 +17,11 @@
 </template>
 
 <script>
-import cartButton from './navbar/buttons/cartButton.vue';
-import loginButton from './navbar/buttons/loginButton.vue';
-import logoComponent from './navbar/logoComponent.vue';
-import linksComponent from './navbar/linksComponent.vue';
-import SearchComponent from './navbar/SearchComponent.vue';
+import cartButton from '@/components/buttons/cartButton.vue';
+import loginButton from '@/components/buttons/loginButton.vue';
+import logoComponent from './navItens/logoComponent.vue';
+import linksComponent from './navItens/linksComponent.vue';
+import SearchComponent from './navItens/SearchComponent.vue';
 
 export default {
   components: {
