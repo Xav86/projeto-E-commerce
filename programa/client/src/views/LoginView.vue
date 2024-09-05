@@ -3,7 +3,7 @@
     <div class="login-content">
         <div class="logo">
             <img src="@/assets/icons/controller.svg" alt="Controle na logo" class="icon">
-            <a class="navbar-brand" href="#">Game Store</a>
+            <router-link class="navbar-brand" to="/">Game Store</router-link>
         </div>
         <form>
             <label for="email" class="form-label">Email</label>
@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .login {
         display: flex;
         flex-direction: column;
@@ -45,6 +45,7 @@ export default {
         padding: 20px 40px;
         background-color: #b3b3b3;
         border-radius: 10px;
+        min-width: 375px;
     }
 
     .login-content input {

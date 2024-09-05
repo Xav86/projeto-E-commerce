@@ -41,7 +41,6 @@ export default {
     .logo {
         display: flex;
         flex-direction: row;
-        align-items: center;
         gap: 2px;
     }
 
@@ -49,6 +48,7 @@ export default {
         display: flex;
         flex-direction: row;
         width: 100%;
+        align-items: center;
         justify-content: space-between;
         padding: 20px;
     }
