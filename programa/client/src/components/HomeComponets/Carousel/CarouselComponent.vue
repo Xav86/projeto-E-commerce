@@ -16,6 +16,12 @@
     <div class="carousel-item" data-bs-interval="10000">
       <img src="@/assets/images/1080x200.png" class="d-block w-100" alt="...">
     </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <img src="@/assets/images/1080x200.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>slide 4 label</h5>
+      </div>
+    </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="card" style="width: 18rem;">
+    <div class="card">
         <img src="@/assets/images/286x180.png" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -12,6 +12,19 @@
   </div>
 </template>
 
-<style>
+<style scoped>
+  .card {
+    width: 18rem;
+  }
+
+@media (max-width: 740px) {
+  .card-item {
+    width: 90%;
+  }
+
+  .card {
+    width: 100%
+  }
+ }
 
 </style>

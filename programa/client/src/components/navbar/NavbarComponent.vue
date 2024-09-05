@@ -6,7 +6,6 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <linksComponent />
           <form class="d-flex gap-2">
-            <SearchComponent />
             <cartButton />
             <loginButton />
           </form>
@@ -21,7 +20,6 @@ import cartButton from '@/components/buttons/cartButton.vue';
 import loginButton from '@/components/buttons/loginButton.vue';
 import logoComponent from './navItens/logoComponent.vue';
 import linksComponent from './navItens/linksComponent.vue';
-import SearchComponent from './navItens/SearchComponent.vue';
 
 export default {
   components: {
@@ -29,7 +27,6 @@ export default {
     loginButton,
     logoComponent,
     linksComponent,
-    SearchComponent
   }
 }
 </script>
