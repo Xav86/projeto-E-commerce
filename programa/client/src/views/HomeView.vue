@@ -22,16 +22,18 @@
       </div>
     </div>
     <footerComponent />
+    <upPageButton class="fixed-right-down" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import NavbarComponent from '@/components/navbar/NavbarComponent.vue';
-import CarouselComponent from '@/components/HomeComponets/Carousel/CarouselComponent.vue';
-import CardItem from '@/components/HomeComponets/CardItens/CardItem.vue';
+import CarouselComponent from '@/components/Carousel/CarouselComponent.vue';
+import CardItem from '@/components/CardItens/CardItem.vue';
 import footerComponent from '@/components/footer/footerComponent.vue';
-import SearchComponent from '@/components/HomeComponets/SearchComponent.vue';
+import SearchComponent from '@/components/search/SearchComponent.vue';
+import upPageButton from '@/components/buttons/upPageButton.vue';
 
 export default {
   name: 'HomeView',
@@ -40,7 +42,8 @@ export default {
     CarouselComponent,
     CardItem,
     footerComponent,
-    SearchComponent
+    SearchComponent,
+    upPageButton
   }
 }
 </script>
@@ -68,6 +71,14 @@ export default {
 
  .search-item {
   padding: 60px 0 20px 0;
+ }
+
+ .fixed-right-down {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
  }
 
 </style>

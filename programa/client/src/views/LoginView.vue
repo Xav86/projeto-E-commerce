@@ -16,7 +16,7 @@
 
         </form>
     </div>
-    <div class="form-text mt-3">Não tem uma conta? <router-link>click aqui!</router-link> para criar uma conta!</div>
+    <div class="form-text mt-3">Não tem uma conta? <router-link to="/register">click aqui!</router-link> para criar uma conta!</div>
   </div>
 </template>
 

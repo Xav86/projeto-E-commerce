@@ -7,7 +7,7 @@
         <div class="footer-itens-between">
             <div class="logo">
                 <img src="@/assets/icons/controller.svg" alt="Controle na logo" class="icon">
-                <a class="navbar-brand" href="#">Game Store</a>
+                <router-link class="navbar-brand" to="/">Game Store</router-link>
             </div>
             <p>&copy; Gustavo</p>
         </div>
