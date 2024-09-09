@@ -11,24 +11,18 @@
             "id": "286d0ea3aaf950c7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Pagina Inicial.md",
-                "mode": "source",
-                "source": false
+                "file": "Projeto-Vue.canvas",
+                "viewState": {
+                  "x": 5,
+                  "y": -427.5,
+                  "zoom": -1.4891177491819485
+                }
               }
             }
-          },
-          {
-            "id": "ad999e5eb176afa9",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,6 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Projeto-Vue.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Projeto-Vue.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +127,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Projeto-Vue.canvas"
+              }
             }
           }
         ]
@@ -151,10 +149,15 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "ad999e5eb176afa9",
+  "active": "286d0ea3aaf950c7",
   "lastOpenFiles": [
     "Projeto-Vue.canvas",
+    "About.md",
+    "Footer.md",
+    "Carrinho de Compras.md",
     "Pagina Inicial.md",
+    "Administrador.md",
+    "Sem título.canvas",
     "Pagina de Produto.md",
     "Componentes pagina de produto.md",
     "Componetes pa.md",
@@ -164,7 +167,6 @@
     "Componentes Todos os produtos.md",
     "Componente Produto.md",
     "Componentes pagina inicial.md",
-    "Carrinho de Compras.md",
     "Login e Cadastro.md",
     "Login",
     "Welcome.md"

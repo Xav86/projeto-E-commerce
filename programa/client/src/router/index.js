@@ -3,6 +3,7 @@ import HomeView from '@/views/HomeView.vue'
 import LoginView from '@/views/LoginView.vue'
 import RegisterView from '@/views/RegisterView.vue'
 import AllGamesView from '@/views/AllGamesView.vue'
+import ShoppingCartView from '@/views/ShoppingCartView.vue'
 
 const routes = [
   {
@@ -29,12 +30,24 @@ const routes = [
     path: '/about',
     name: 'about',
     component: HomeView
+  },
+  {
+    path: '/cart',
+    name: 'cart',
+    component: ShoppingCartView
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { top: 0 };
+    }
+  },
 })
 
 export default router

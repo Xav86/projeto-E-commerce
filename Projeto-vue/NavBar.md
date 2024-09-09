@@ -1,2 +1,2 @@
-[[Componentes pagina inicial]][[Componentes Todos os produtos]] [[Componentes Carrinho de Compra]] [[Componentes pagina de produto]]
+[[Componentes pagina inicial]][[Componentes Todos os produtos]] [[Componentes Carrinho de Compra]] [[Componentes pagina de produto]] [[About]]
 Esse em especial vai aparecer em todo lugar exeto no login

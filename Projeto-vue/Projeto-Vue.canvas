@@ -1,11 +1,11 @@
 {
 	"nodes":[
+		{"id":"3d43a21f6a94aad6","x":-1160,"y":-1240,"width":400,"height":400,"type":"file","file":"About.md"},
 		{"id":"eb6d133b28e006a9","type":"file","file":"Pagina Inicial.md","x":-190,"y":-780,"width":400,"height":352,"color":"4"},
 		{"id":"c650962d6d175209","type":"text","text":"## Dados login\npara logar vai ser necessário\n- email\n- senha\npro resto dos dados cadastrais pode ser aqueles padrão, nome, data de nascimento endereço, cpf e numero","x":1040,"y":-951,"width":250,"height":391,"color":"3"},
 		{"id":"de52d56e97a7b3ca","type":"file","file":"Login e Cadastro.md","x":480,"y":-951,"width":400,"height":297,"color":"4"},
 		{"id":"ef0f73061fb931fd","type":"file","file":"Carrinho de Compras.md","x":-800,"y":-604,"width":400,"height":249,"color":"4"},
 		{"id":"9a037fb906460a22","type":"file","file":"Pagina de Produto.md","x":-540,"y":-1260,"width":400,"height":220,"color":"4"},
-		{"id":"e9910a63c321ccf5","type":"text","text":"## Dados\n\n- Nome do produto\n- categoria\n- preço\n\nnão sei, mas pode ter mais coisas","x":10,"y":-1277,"width":250,"height":255,"color":"3"},
 		{"id":"5076f5b7ddbaec35","type":"text","text":"# Projeto E-commerce com Vue","x":-225,"y":-122,"width":460,"height":60,"color":"5"},
 		{"id":"a423ebe071d3bbc1","type":"text","text":"provavelmente vai ser E-commerce de Jogos","x":10,"y":-280,"width":250,"height":60,"color":"3"},
 		{"id":"062231c574416c38","type":"text","text":"Figma para protótipo?","x":333,"y":-117,"width":227,"height":50,"color":"1"},
@@ -15,8 +15,12 @@
 		{"id":"7f203c0c78b2ba84","type":"file","file":"Componentes Todos os produtos.md","x":-225,"y":40,"width":400,"height":200,"color":"2"},
 		{"id":"60a6a023f3f64f7b","type":"file","file":"NavBar.md","x":-165,"y":334,"width":400,"height":400,"color":"2"},
 		{"id":"4ed2c6312bf450fd","type":"file","file":"Componentes Carrinho de Compra.md","x":-1280,"y":-718,"width":400,"height":229,"color":"2"},
-		{"id":"bb0fce4de18272e3","x":-1040,"y":-1520,"width":400,"height":200,"color":"2","type":"file","file":"Componentes pagina de produto.md"},
-		{"id":"fd7e376e4cfa9cd3","x":212,"y":-415,"width":168,"height":60,"type":"text","text":"quase certeza"}
+		{"id":"bb0fce4de18272e3","type":"file","file":"Componentes pagina de produto.md","x":-1040,"y":-1520,"width":400,"height":200,"color":"2"},
+		{"id":"fd7e376e4cfa9cd3","type":"text","text":"quase certeza","x":212,"y":-415,"width":168,"height":60},
+		{"id":"f4b3eaf38f61f3fd","type":"file","file":"Administrador.md","x":480,"y":-1560,"width":400,"height":220,"color":"4"},
+		{"id":"6e2dad0d6f7a4ff3","type":"text","text":"# CRUD\n\n- cadastro\n- edição\n- exclusão\n- listagem","x":1040,"y":-1655,"width":250,"height":271,"color":"3"},
+		{"id":"e9910a63c321ccf5","type":"text","text":"## Dados\n\n- Nome do produto\n- categoria\n- preço\n\nnão sei, mas pode ter mais coisas","x":-15,"y":-1420,"width":250,"height":255,"color":"3"},
+		{"id":"dae0e5cb04902cbf","type":"file","file":"Footer.md","x":360,"y":400,"width":400,"height":400,"color":"2"}
 	],
 	"edges":[
 		{"id":"93f0d9a9e8bd32f7","fromNode":"5076f5b7ddbaec35","fromSide":"top","toNode":"a423ebe071d3bbc1","toSide":"bottom"},
@@ -34,6 +38,8 @@
 		{"id":"b5107246a3c6ed9d","fromNode":"7f203c0c78b2ba84","fromSide":"left","toNode":"31f8ce106e1466cd","toSide":"right"},
 		{"id":"5002589e6ab8bc04","fromNode":"4ed2c6312bf450fd","fromSide":"right","toNode":"ef0f73061fb931fd","toSide":"left"},
 		{"id":"402708058c9f96db","fromNode":"bb0fce4de18272e3","fromSide":"right","toNode":"9a037fb906460a22","toSide":"top"},
-		{"id":"0e8eda5aa330d27b","fromNode":"fd7e376e4cfa9cd3","fromSide":"bottom","toNode":"a423ebe071d3bbc1","toSide":"top"}
+		{"id":"0e8eda5aa330d27b","fromNode":"fd7e376e4cfa9cd3","fromSide":"bottom","toNode":"a423ebe071d3bbc1","toSide":"top"},
+		{"id":"25b965ec19a76ca1","fromNode":"f4b3eaf38f61f3fd","fromSide":"right","toNode":"6e2dad0d6f7a4ff3","toSide":"left"},
+		{"id":"64277002f7b21f84","fromNode":"eb6d133b28e006a9","fromSide":"top","toNode":"f4b3eaf38f61f3fd","toSide":"bottom","color":"1","label":"somente ADM"}
 	]
 }

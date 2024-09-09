@@ -79,6 +79,6 @@ export default {
     bottom: 20px;
     right: 20px;
     z-index: 2;
- }
+  }
 
 </style>
