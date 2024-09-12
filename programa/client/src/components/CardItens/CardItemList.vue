@@ -2,7 +2,9 @@
     <div class="list-cart">
         <img src="@/assets/images/150x95.png" alt="Imagem do produto" class="image-product">
         <div class="space-between">
-            <h1 class="game-name">nome do jogo</h1>
+            <router-link to="/product/joguinho-gamer" class="cart-link">
+              <h1 class="game-name">nome do jogo</h1>
+            </router-link>
             <div class="align-center">
             <p>R$00,00</p>
             <button class="btn p-0 align-center"><img src="@/assets/icons/trash.svg" alt="icone de uma lixeira para excluir itens"></button>
@@ -47,6 +49,11 @@ export default {
     align-items: center;
     gap: 12px;
 
+  }
+
+  .cart-link {
+    text-decoration: none;
+    color: #000;
   }
 
 </style>
