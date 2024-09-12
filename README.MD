@@ -12,8 +12,8 @@ Irei estar fazendo um clássico E-commerce, a principio farei um comércio de jo
 ### Planejamento - Obsidian
 Estou pretendendo usar a ferramenta [Obsidian](https://obsidian.md/), onde nele estou fazendo um esquema de mapa mental e meio que "relacionamentos" para poder me guiar ao longo do desenvolvimento.
 
-### Prototipação - Figma
-Para prototipação e desenvolvimento das telas pretendo usar um espaço do Figma para fazer os protótipos e ter uma noção do que irei precisar fazer nas Telas. mas só especificamente de como vai ficar o estilo, não vou tentar fazer aquela parte funcional do figma.
+~~Prototipação - Figma
+Para prototipação e desenvolvimento das telas pretendo usar um espaço do Figma para fazer os protótipos e ter uma noção do que irei precisar fazer nas Telas. mas só especificamente de como vai ficar o estilo, não vou tentar fazer aquela parte funcional do figma.~~ -> resolvi já ir fazendo no próprio Vue pra ter uma base de como usar componentização e ver como funcionaria.
 
 ### Banco de Dados Relacional
 Quanto a esse vou usar banco de dados realcional, é o que sei mexer no momento. Já qual exatamente vai ser a ferramenta no momento, mas pretendo fazer com que o programa seja adaptavel para qualquer banco relacional, sendo necessário só ter o banco com mesmas tabelas e nomes dos campos iguais e claro, mudar só o arquivo de conexão (provavelmente usarei Oracle quando desenvolver nos intervalos do Trabalho e Mysql em outro lugar).
