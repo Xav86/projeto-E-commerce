@@ -1,13 +1,15 @@
 <template>
   <div>
     <NavbarComponent />
-    <div class="container text-center">
-        <h1>Todos os Jogos disponiveis</h1>
-        <hr>
-        <searchComponent />
-    </div>
-    <div class="grid-container">
-        <CardItem class="card-item" v-for="n in 23" :key="n" />
+    <div class="all-game">
+      <div class="container text-center">
+          <h1>Todos os Jogos disponiveis</h1>
+          <hr>
+          <searchComponent />
+      </div>
+      <div class="grid-container">
+          <CardItem class="card-item" v-for="n in 23" :key="n" />
+      </div>
     </div>
     <footerComponent />
     <upPageButton class="fixed-right-down" />
@@ -34,6 +36,10 @@ export default {
 </script>
 
 <style scoped>
+  .all-game {
+    min-height: 74.6vh;
+  }
+
  .grid-container {
   padding: 50px 10% 20px 10%;
   display: flex;

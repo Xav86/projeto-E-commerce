@@ -49,6 +49,10 @@ export default {
 </script>
 
 <style scoped>
+  .home {
+    min-height: 72.5vh;
+  }
+
  .grid-container {
   padding: 50px 10% 20px 10%;
   display: flex;
