@@ -8,6 +8,9 @@
             <img src="@/assets/icons/boxes.svg" alt="icone de caixas">
             <router-link class="nav-link" to="/about">About</router-link>
         </li>
+        <li v-if="true" class="nav-item">
+            <router-link class="nav-link" to="/admin">Painel de Administrador</router-link>
+        </li>
     </ul>
 </template>
 
