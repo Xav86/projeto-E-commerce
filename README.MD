@@ -3,7 +3,6 @@
 
 Eu mesmo estou por agora me restringindo de continuar este projeto por certo tempo. consigo me ver "patinando" e meio que não saindo do lugar, sendo assim, vou fazer o seguinte, farei micro implementações com as funcionalidades do projeto! fazendo de uma vez a parte funcional que tanto estou enrolando, para só depois voltar para o "grosso" com tudo junto e lapidar o projeto, transformando a base em um programa digno, não importa quanto eu demore ou enrole, terminarei isso, nem que fique ruim, boa sorte eu mesmo.
 
-~~
 ## Objetivo  📌
 Projeto usando Vue e otras técnologias em prática para melhorar minhas abilidades, tanto na parte de desenvolvimento com o Framework Vue, mas também com todas as ferramentas que precisar e principalmente saber como vou lidar com o desenvolvimento e planejamento de todo o projeto.
 
@@ -31,4 +30,3 @@ Quanto a local que estarei guardando os arquivos é em um repositório do Github
 Aqui vou citar outras ferramentas que usei que não encaixei nas outras categorias
  - [Chatgpt](https://chatgpt.com/) <- fazer revisão de código e ajudar com erros e bugs qual não domino.
  - [Postman](https://www.postman.com/) <- fazer as requisições pra api para verificar se a funcionalidade e respostas estão coretas.
-~~
