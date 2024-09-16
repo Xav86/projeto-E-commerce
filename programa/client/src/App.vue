@@ -19,4 +19,8 @@
     align-items: center;
     flex-wrap: wrap;
   }
+
+  .text-center {
+    text-align: center;
+  }
 </style>

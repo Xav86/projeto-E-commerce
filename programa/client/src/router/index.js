@@ -6,7 +6,7 @@ import AllGamesView from '@/views/AllGamesView.vue'
 import ShoppingCartView from '@/views/ShoppingCartView.vue'
 import ProductView from '@/views/ProductView.vue'
 import AdminPainelView from '@/views/Admin/AdminPainelView.vue'
-import AdminListProduts from '@/views/Admin/AdminListProduts.vue'
+import NewProductView from '@/views/Admin/NewProductView.vue'
 
 const routes = [
   {
@@ -50,9 +50,9 @@ const routes = [
     component: AdminPainelView
   },
   {
-    path: '/admin/products-list',
-    name: 'ProdutsList',
-    component: AdminListProduts
+    path: '/admin/new-product',
+    name: 'New product',
+    component: NewProductView
   }
 ]
 

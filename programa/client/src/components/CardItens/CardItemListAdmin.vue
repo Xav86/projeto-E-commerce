@@ -1,13 +1,13 @@
 <template>
-    <router-link to="" class="edit-link">
-    <div class="list-produtcs">
-        <img src="@/assets/images/150x95.png" alt="Imagem do produto" class="image-product">
-        <div class="space-between-here">
-              <h1 class="game-name">nome do jogo</h1>
-              
-              <small class="info">clique no card para visualizar mais detalhes</small>
-              
-              <p>R$00,00</p>
+    <router-link class="edit-link" data-bs-toggle="modal" data-bs-target="#product">
+        <div class="list-produtcs">
+            <img src="@/assets/images/150x95.png" alt="Imagem do produto" class="image-product">
+            <div class="space-between-here">
+                <h1 class="game-name">nome do jogo</h1>
+                
+                <small class="info">clique no card para visualizar mais detalhes</small>
+                
+                <p>R$00,00</p>
             </div>
         </div>
     </router-link>
@@ -61,12 +61,17 @@ export default {
     padding: 10px 20px;
     align-items: center;
     gap: 12px;
-
   }
 
   .edit-link {
     text-decoration: none;
     color: #000;
+  }
+
+  @media (max-width: 500px) {
+    .space-between-here {
+      flex-wrap: wrap;
+    }
   }
 
 </style>

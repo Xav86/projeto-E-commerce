@@ -73,4 +73,14 @@ import CarouselGameBase from '@/components/Carousel/CarouselGameBase.vue'
         margin-top: 20px;
     }
 
+    @media (max-width: 770px) {
+        .game-container {
+            flex-direction: column;
+        }
+
+        .game {
+            width: 100%;
+        }
+    }
+
 </style>
