@@ -1,5 +1,4 @@
 /* table USERS */
-const knex = require('knex');
 const knexInstance = require('../database/database');
 
 class User {
@@ -29,6 +28,7 @@ class User {
                 .from('USERS');
 
             return result;
+
         } catch(error) {
             throw error;
         }
@@ -50,7 +50,7 @@ class User {
                 return {status: false, msg: 'Nenhum usuário encontrado'};
             }
 
-            return {status: true, data: result}
+            return {status: true, data: result};
 
         } catch(error) {
             throw error
@@ -69,6 +69,29 @@ class User {
             }
 
             return {status: true, data: result};
+
+        } catch(error) {
+            throw error;
+        }
+    }
+
+    async delete(id) {
+        try {
+            const response = await this.findById(id);
+
+            if (response.status) {
+                await knexInstance.delete()
+                    .table('USERS')
+                    .where({ID_USER: id});
+                
+                return {status: true, msg: 'Usuário deletado'};
+
+            } else {
+                
+                return {status: false, msg: 'Usuário não existente, não sendo possivel deletalo'};
+            }
+
+
         } catch(error) {
             throw error;
         }

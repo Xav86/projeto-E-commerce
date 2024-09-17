@@ -47,16 +47,37 @@ class UserController {
             const result = await User.findById(id);
 
             if (result.status) {
-                res.status(200).json(result.data);
+                res.status(200).json({msg: result.data});
                 return;
             } else {
-                res.status(404).json(result.msg);
+                res.status(404).json({msg: result.msg});
                 return;
             }
 
         } catch(error) {
-            console.error('Erro ao buscar usuário por ID: ',);
+            console.error('Erro ao buscar usuário por ID: ', error);
             res.status(500).json({error: 'Erro interno ao buscar usuário'});
+        }
+    }
+
+    async deleteUser(req, res) {
+        const { id } = req.params;
+
+        try {
+            const result = await User.delete(id);
+
+            if (result.status) {
+                res.status(200).json({msg: result.msg});
+                return;
+            } else {
+                res.status(404).json({msg: result.msg});
+                return;
+            }
+
+            
+        } catch(error) {
+            console.error(error);
+            res.status(500).json({error: 'Erro interno ao deletar usuário'});
         }
     }
 

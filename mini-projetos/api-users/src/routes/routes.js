@@ -15,6 +15,6 @@ router.post('/user', UserController.new) //create a user
 router.put('/user') //edit user
 
 /* delete */
-router.delete('/user/:id') //delete a user
+router.delete('/user/:id', UserController.deleteUser) //delete a user
 
 module.exports = router;
