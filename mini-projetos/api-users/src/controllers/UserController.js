@@ -9,8 +9,19 @@ class UserController {
 
             res.status(200).json({msg: 'Usuário criado com sucesso!'});
         } catch(error) {
-            console.log('Erro', error)
-            res.status(500).json({error: 'Erro interno ao inserir um usuário'})
+            console.error('Erro ao cadastrar usuário: ', error);
+            res.status(500).json({error: 'Erro interno ao inserir um usuário'});
+        }
+    }
+
+    async listUsers(req, res) {
+        try {
+            const result = await User.findAll();
+
+            res.status(200).json(result);
+        } catch(error) {
+            console.error('Erro ao listar usuários: ', error);
+            res.status(500).json({error: 'Erro interno ao listar usuários'});
         }
     }
 

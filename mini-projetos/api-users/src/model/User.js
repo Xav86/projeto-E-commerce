@@ -3,8 +3,8 @@ const knexInstance = require('../database/database');
 
 class User {
     async create(name, email, password, date) {
+
         const data = {
-            ID_USER: 666,
             NAME: name,
             EMAIL: email,
             PASSWORD: password,
@@ -15,9 +15,21 @@ class User {
             await knexInstance.insert(data)
                 .into('USERS');
 
-            return 
+            return
+
         } catch(error) {
-            throw error
+            throw error;
+        }
+    }
+
+    async findAll() {
+        try {
+            const result = await knexInstance.select()
+                .from('USERS');
+
+            return result;
+        } catch(error) {
+            throw error;
         }
     }
 };
