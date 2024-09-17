@@ -83,6 +83,34 @@ class UserController {
         }
     }
 
+    async editUser(req, res) {
+        const { id, name, email, date_nasc, role } = req.body;
+
+        const data = {
+            id: id,
+            name: name,
+            email: email,
+            date_nasc: new Date(date_nasc),
+            role: role 
+        }
+
+        try {
+            const result = await User.update(data);
+
+            if (!result.status) {
+                res.status(400).json({msg: result.error});
+                return;
+            } else {
+                res.status(200).json({msg: result.msg});
+            }
+
+        } catch(error) {
+            console.error('Error ao editar usuário: ', error);
+            res.status(500).json({error: 'Error ao editar o usuário'});
+        }
+
+    }
+
 };
 
 module.exports = new UserController;

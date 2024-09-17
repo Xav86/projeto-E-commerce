@@ -103,6 +103,56 @@ class User {
             throw error;
         }
     }
+
+    async update(data) {
+        console.log(data);
+
+        if (!data) {
+            throw {status: false, error: 'Os dados de alteração não podem ser nulos'};
+        }
+        
+        let user;
+        try {
+            user = await this.findById(data.id);
+        } catch(error) {
+            throw {status: false, error: 'Erro ao consultar usuário atual para alteração'};
+        }
+
+        let updateData = {}
+        
+        if (data.name) {
+            updateData.NAME = data.name;
+        }
+        
+        if (data.email) {
+            if (user.EMAIL != data.email) { // se o email é igual n tem pq tentar mudar
+                const result = await this.findByEmail(data.email);
+                if(!result.status) { // se o email existir n deixa passa
+                    return {status: false, error: 'Email já esta cadastrado'};
+                } else {
+                    updateData.EMAIL = data.email;
+                }
+            }
+        }
+
+        if (data.date_nasc) {
+            updateData.DATA_NASCIMENTO = data.date_nasc;
+        }
+
+        if (data.role) {
+            updateData.ROLE = data.role;
+        }
+
+        try {
+            await knexInstance.update(updateData)
+                .where({ID_USER: data.id})
+                .table('USERS');
+
+            return {status: true, msg: 'Usuário alterado com sucesso'};
+        } catch(error) {
+            throw error;
+        }
+    }
 };
 
 module.exports = new User;
