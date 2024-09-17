@@ -1,13 +1,20 @@
 /* table USERS */
 const knexInstance = require('../database/database');
+const bcrypt = require('bcrypt');
 
 class User {
     async create(name, email, password, date) {
 
+        if (typeof password !== 'string') {
+            throw new Error('A senha deve ser uma string');
+        }
+
+        const hash = await bcrypt.hash(password, 10);
+
         const data = {
             NAME: name,
             EMAIL: email,
-            PASSWORD: password,
+            PASSWORD: hash,
             DATA_NASCIMENTO: new Date(date)
         }
 
@@ -87,7 +94,7 @@ class User {
                 return {status: true, msg: 'Usuário deletado'};
 
             } else {
-                
+
                 return {status: false, msg: 'Usuário não existente, não sendo possivel deletalo'};
             }
 

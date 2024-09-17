@@ -1,9 +1,11 @@
 const User = require('../model/User');
+require('dotenv').config();
 
 class UserController {
 
     async new(req, res) {
         const {name, email, password, date} = req.body;
+
         try {
 
             const result = await User.findByEmail(email);

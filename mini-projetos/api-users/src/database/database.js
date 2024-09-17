@@ -1,5 +1,6 @@
 const knex = require('knex');
 const Oracledb = require('oracledb');
+require('dotenv').config();
 
 Oracledb.initOracleClient();
 
