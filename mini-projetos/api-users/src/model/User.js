@@ -1,4 +1,5 @@
 /* table USERS */
+const knex = require('knex');
 const knexInstance = require('../database/database');
 
 class User {
@@ -53,6 +54,23 @@ class User {
 
         } catch(error) {
             throw error
+        }
+    }
+
+    async findByEmail(email) {
+        try {
+            const result = await knexInstance.select()
+                .from('USERS')
+                .where({EMAIL: email})
+                .first();
+
+            if (!result) {
+                return {status: false, msg: 'Nenhum usuário encontrado'};
+            }
+
+            return {status: true, data: result};
+        } catch(error) {
+            throw error;
         }
     }
 };

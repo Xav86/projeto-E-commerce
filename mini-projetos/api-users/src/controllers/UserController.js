@@ -5,6 +5,14 @@ class UserController {
     async new(req, res) {
         const {name, email, password, date} = req.body;
         try {
+
+            const result = await User.findByEmail(email);
+
+            if (result.status) {
+                res.status(403).json({msg: 'usuário já cadastrado com este email'});
+                return;
+            }
+
             await User.create(name, email, password, date);
 
             res.status(200).json({msg: 'Usuário criado com sucesso!'});
