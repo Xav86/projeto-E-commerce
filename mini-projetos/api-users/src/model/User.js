@@ -15,7 +15,7 @@ class User {
             await knexInstance.insert(data)
                 .into('USERS');
 
-            return
+            return;
 
         } catch(error) {
             throw error;
@@ -30,6 +30,29 @@ class User {
             return result;
         } catch(error) {
             throw error;
+        }
+    }
+
+    async findById(id) {
+        if (!id || isNaN(id)) {
+            throw new Error('dado passado invalido');
+        }
+
+        try {
+
+            const result = await knexInstance.select()
+                .from('USERS')
+                .where({ID_USER: id})
+                .first();
+
+            if (!result) {
+                return {status: false, msg: 'Nenhum usuário encontrado'};
+            }
+
+            return {status: true, data: result}
+
+        } catch(error) {
+            throw error
         }
     }
 };
