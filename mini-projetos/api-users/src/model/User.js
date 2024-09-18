@@ -196,7 +196,7 @@ class User {
                 return {status: false, error: 'Senha incorreta'};
             }
 
-            if (result.data.ROLE === 1) {
+            if (result.data.ROLE !== 1) {
                 return {status: false, error: 'Nivel de acesso insuficiente'};
             } 
 
