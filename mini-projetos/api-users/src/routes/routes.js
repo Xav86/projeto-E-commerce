@@ -13,6 +13,7 @@ router.post('/user', UserController.new) //create a user
 
 /* put */
 router.put('/user', UserController.editUser) //edit user
+router.put('/user/password', UserController.editPasswordUser) //edit a user password 
 
 /* delete */
 router.delete('/user/:id', UserController.deleteUser) //delete a user
