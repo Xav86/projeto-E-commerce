@@ -202,6 +202,10 @@ class UserController {
         }
     }
 
+    async validate(req, res) {
+        res.status(200).json({msg: 'usuário autorizado'});
+    }
+
 };
 
 module.exports = new UserController;
