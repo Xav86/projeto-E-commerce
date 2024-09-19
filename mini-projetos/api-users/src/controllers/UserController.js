@@ -144,12 +144,17 @@ class UserController {
         const { id, newPassword, email, password } = req.body // id = id do usuário a ser alterado + nova senha e email + password é do usuario ADM que tem que autorizar a troca.
 
         try {
-            const result = await User.findByLogin(email, password);
+            const result = await User.findLogin(email, password);
 
             if (!result.status) {
-                res.status(403).json({error: result.error});
+                res.status(400).json({error: result.error});
                 return;
             }
+
+            if (result.data.ROLE !== 1) { //nivel 1 === adm
+                res.status(401).json({error: 'Nivel de acesso insuficiente'});
+                return;
+            } 
 
         } catch(error) {
             console.error('Erro ao confirmar credenciais do usuário administrado: ', error);

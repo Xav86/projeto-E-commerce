@@ -177,10 +177,10 @@ class User {
         }
     }
 
-    async findByLogin(email, password) {
+    async findLogin(email, password) {
         
         if (!email  || !password) {
-            return {status: false, error: 'credenciais necessárias para fazer a pesquisa'};
+            return {status: false, error: 'credenciais necessárias autenticar'};
         }
 
         try {
@@ -196,16 +196,13 @@ class User {
                 return {status: false, error: 'Senha incorreta'};
             }
 
-            if (result.data.ROLE !== 1) {
-                return {status: false, error: 'Nivel de acesso insuficiente'};
-            } 
-
-            return {status: true}
+            return {status: true, data: result};
 
         } catch(error) {
             throw error;
         }
     }
+
 };
 
 module.exports = new User;
