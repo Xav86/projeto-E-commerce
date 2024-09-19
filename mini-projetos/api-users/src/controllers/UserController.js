@@ -191,7 +191,7 @@ class UserController {
                 return;
             }
             
-            const token = jwt.sign({ id: result.data.ID_USER, email: result.data.EMAIL }, process.env.TEMPERO);
+            const token = jwt.sign({ id: result.data.ID_USER, email: result.data.EMAIL, role: result.data.ROLE }, process.env.TEMPERO);
 
             res.status(200).json({msg: 'logado!', token: token});
 
