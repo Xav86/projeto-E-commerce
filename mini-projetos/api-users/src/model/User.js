@@ -196,7 +196,7 @@ class User {
                 return {status: false, error: 'Senha incorreta'};
             }
 
-            return {status: true, data: result};
+            return {status: true, data: result.data};
 
         } catch(error) {
             throw error;

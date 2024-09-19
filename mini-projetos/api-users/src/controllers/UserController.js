@@ -1,4 +1,5 @@
 const User = require('../model/User');
+const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
 class UserController {
@@ -175,6 +176,28 @@ class UserController {
         } catch(error) {
             console.error('Erro ao editar senha do usuário: ', error);
             res.status(500).json({error: 'Error ao editar senha do usuário'});
+            return;
+        }
+    }
+
+    async login(req, res) {
+        const { email, password } = req.body;
+
+        try {
+            const result = await User.findLogin(email, password);
+
+            if (!result.status) {
+                res.status(400).json({error: result.error});
+                return;
+            }
+            
+            const token = jwt.sign({ id: result.data.ID_USER, email: result.data.EMAIL }, process.env.TEMPERO);
+
+            res.status(200).json({msg: 'logado!', token: token});
+
+        } catch(error) {
+            console.error('Erro ao tentar realizar login ', error);
+            res.status(500).json({error: 'Error ao realizar login'});
             return;
         }
     }

@@ -10,7 +10,7 @@ router.get('/user/:id', UserController.findUserById) //get a user
 
 /* post */
 router.post('/user', UserController.new) //create a user
-router.post('/login') //user login (create jwt)
+router.post('/login', UserController.login) //user login (create jwt)
 
 /* put */
 router.put('/user', UserController.editUser) //edit user
