@@ -13,11 +13,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Projeto-Vue.canvas",
+                "file": "Users.canvas",
                 "viewState": {
-                  "x": 5,
-                  "y": -427.5,
-                  "zoom": -1.4891177491819485
+                  "x": 75.64365482233498,
+                  "y": 77.99949238578685,
+                  "zoom": -0.5433577008634431
                 }
               }
             }
@@ -88,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projeto-Vue.canvas",
+                "file": "Users.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projeto-Vue.canvas",
+                "file": "Users.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,8 +128,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projeto-Vue.canvas"
+                "file": "Users.canvas"
               }
+            }
+          },
+          {
+            "id": "c441fe943795ea80",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
             }
           }
         ]
@@ -152,12 +160,17 @@
   "active": "286d0ea3aaf950c7",
   "lastOpenFiles": [
     "Projeto-Vue.canvas",
+    "Users.canvas",
+    "Sem título.md",
+    "Sem título.canvas",
     "About.md",
+    "Pagina Inicial.md",
+    "Editar Jogo.md",
+    "Novo Jogo.md",
+    "Listagem de jogos.md",
     "Footer.md",
     "Carrinho de Compras.md",
-    "Pagina Inicial.md",
     "Administrador.md",
-    "Sem título.canvas",
     "Pagina de Produto.md",
     "Componentes pagina de produto.md",
     "Componetes pa.md",

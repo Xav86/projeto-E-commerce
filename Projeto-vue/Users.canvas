@@ -1,0 +1,36 @@
+{
+	"nodes":[
+		{"id":"da688c0551572191","type":"text","text":"Users","x":-140,"y":-40,"width":250,"height":60,"color":"6"},
+		{"id":"1ba05dfa1726f7bd","type":"text","text":"Pesquisa","x":-526,"y":-139,"width":250,"height":60,"color":"4"},
+		{"id":"7d69c0f8599783a8","type":"text","text":"Todos os usuários","x":-460,"y":-312,"width":250,"height":60,"color":"3"},
+		{"id":"1361d90759b0f75a","type":"text","text":"Um unico usuário","x":-878,"y":-276,"width":250,"height":60,"color":"3"},
+		{"id":"8118e1342c7b4a7b","type":"text","text":"Por email","x":-460,"y":177,"width":250,"height":60,"color":"3"},
+		{"id":"3e78ad629775891c","type":"text","text":"nome\nemail\ndata de nascimento","x":640,"y":-150,"width":320,"height":160,"color":"3"},
+		{"id":"e77e3d5e8c84e1e6","type":"text","text":"nome\nemail\nsenha\ndata de nascimento\ncargo","x":474,"y":-460,"width":250,"height":148,"color":"3"},
+		{"id":"20fef718fcb25b65","type":"text","text":"Cadastro","x":200,"y":-254,"width":250,"height":60,"color":"4"},
+		{"id":"012b16ca8acdce18","type":"text","text":"Deleção","x":246,"y":177,"width":250,"height":60,"color":"4"},
+		{"id":"8768daed593a4bdd","type":"text","text":"ID","x":305,"y":360,"width":250,"height":60,"color":"3"},
+		{"id":"5bee6b7f52425a91","type":"text","text":"login","x":-120,"y":-382,"width":250,"height":60,"color":"4"},
+		{"id":"387b3a5866d3e25c","type":"text","text":"Geração de token que vai limitar todas as rotas aqui, deixando só adms conseguir acessalas","x":-140,"y":-640,"width":250,"height":128,"color":"2"},
+		{"id":"b838b50bfc70788e","type":"text","text":"Edição","x":305,"y":-40,"width":250,"height":60,"color":"4"},
+		{"id":"c1096da3759cef5b","type":"text","text":"Edição de senha","x":599,"y":117,"width":250,"height":60,"color":"4"},
+		{"id":"5b481f3a1b268c58","type":"text","text":"usuario\nsenha de ADM\nsenha para ser alterada","x":960,"y":62,"width":250,"height":145,"color":"3"}
+	],
+	"edges":[
+		{"id":"682894797d7220e0","fromNode":"da688c0551572191","fromSide":"right","toNode":"20fef718fcb25b65","toSide":"bottom","color":"1"},
+		{"id":"8716da47b650d09e","fromNode":"20fef718fcb25b65","fromSide":"top","toNode":"e77e3d5e8c84e1e6","toSide":"left","color":"1"},
+		{"id":"5d51916b99fb0f88","fromNode":"da688c0551572191","fromSide":"right","toNode":"b838b50bfc70788e","toSide":"left","color":"1"},
+		{"id":"d14301e1cfa4b3ca","fromNode":"b838b50bfc70788e","fromSide":"right","toNode":"3e78ad629775891c","toSide":"left","color":"1"},
+		{"id":"b2ce3823fb5f8b7b","fromNode":"da688c0551572191","fromSide":"right","toNode":"012b16ca8acdce18","toSide":"top","color":"1"},
+		{"id":"70a43254685447b5","fromNode":"012b16ca8acdce18","fromSide":"bottom","toNode":"8768daed593a4bdd","toSide":"top","color":"1"},
+		{"id":"297c4a763905b2c1","fromNode":"da688c0551572191","fromSide":"left","toNode":"1ba05dfa1726f7bd","toSide":"right","color":"1"},
+		{"id":"f22ce8c02d57bd57","fromNode":"1ba05dfa1726f7bd","fromSide":"bottom","toNode":"8118e1342c7b4a7b","toSide":"top","color":"1"},
+		{"id":"5314c196a312de02","fromNode":"8118e1342c7b4a7b","fromSide":"right","toNode":"8768daed593a4bdd","toSide":"left","color":"1","label":"consulta necessária"},
+		{"id":"cfdf8b6f7e987e5b","fromNode":"1ba05dfa1726f7bd","fromSide":"top","toNode":"7d69c0f8599783a8","toSide":"bottom","color":"1"},
+		{"id":"3d8a9a6928ae2155","fromNode":"1ba05dfa1726f7bd","fromSide":"left","toNode":"1361d90759b0f75a","toSide":"right","color":"1"},
+		{"id":"7d9111cb3e95c486","fromNode":"da688c0551572191","fromSide":"top","toNode":"5bee6b7f52425a91","toSide":"bottom","color":"6"},
+		{"id":"6b94a634dc387220","fromNode":"5bee6b7f52425a91","fromSide":"top","toNode":"387b3a5866d3e25c","toSide":"bottom","color":"1"},
+		{"id":"24efc6658eeb62a8","fromNode":"da688c0551572191","fromSide":"bottom","toNode":"c1096da3759cef5b","toSide":"top","color":"1"},
+		{"id":"cd83bc3202dba015","fromNode":"c1096da3759cef5b","fromSide":"right","toNode":"5b481f3a1b268c58","toSide":"left","color":"1"}
+	]
+}
