@@ -1,33 +1,77 @@
 <template>
-  <div class="login">
-    <div class="login-content">
-        <div class="logo">
-            <img src="@/assets/icons/controller.svg" alt="Controle na logo" class="icon">
-            <router-link class="navbar-brand" to="/">Game Store</router-link>
+  <div class="background">
+    <div class="login">
+        <div v-if="this.error">
+            <div class="alert alert-danger d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+            <div>
+                An example danger alert with an icon
+            </div>
         </div>
-        <form>
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Digite aqui seu email">
-
-            <label for="password" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Digite aqui sua senha">
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-
-        </form>
+        </div>
+        <div>
+            <logoComponent />
+        </div>
+        <div class="login-content">
+            <form @submit.prevent="logar()">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" v-model="email" placeholder="Digite seu email" required>
+                <label for="password" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="password" name="password" v-model="password" placeholder="Digite sua senha" required>
+                <button type="submit" class="btn btn-primary">Logar</button>
+            </form>
+        </div>
+        <div class="form-text mt-3">Não tem uma conta? <router-link to="/register">click aqui</router-link> para criar uma!</div>
     </div>
-    <div class="form-text mt-3">Não tem uma conta? <router-link to="/register">click aqui!</router-link> para criar uma conta!</div>
   </div>
 </template>
 
 <script>
+import axios from 'axios';
+import logoComponent from '@/components/logo/LogoComponent.vue';
 
 export default {
-    name: 'loginView'
+    name: 'loginView',
+    components: {
+        logoComponent
+    },
+    data() {
+        return {
+            email: '',
+            password: '',
+            error: false
+        }
+    },
+    methods: {
+        async logar() {
+            console.log("Email:", this.email);
+            console.log("Password:", this.password);
+
+            try {
+                const result = await axios.post('http://localhost:8919/login', {
+                    email: this.email, 
+                    password: this.password
+                });
+
+                localStorage.setItem('token', result.data.token)
+                console.log(result)
+            } catch(error) {
+                console.log(error.response.data.error);
+            }
+            
+        }
+    }
 }
 </script>
 
 <style scoped>
+    .background {
+        background-image: url('@/assets/images/retro-background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+    }
+
     .login {
         display: flex;
         flex-direction: column;
@@ -35,26 +79,52 @@ export default {
         justify-content: center;
         width: 100%;
         height: 100vh;
+
+        color: #fafafa;
+        background-color: #000000a3;
     }
 
     .login-content {
         display: flex;
         flex-direction: column;
-        width: 30%;
         justify-content: center;
-        padding: 20px 40px;
-        background-color: #b3b3b3;
+        width: 30%;
+        min-width: 330px;
+        max-width: 30%;
+
+        padding: 20px 35px;
         border-radius: 10px;
-        min-width: 375px;
+        background-color: #fafafa;
+    }
+
+    label {
+        margin: 0;
+        color: #0d2388;
     }
 
     .login-content input {
         margin-bottom: 10px;
+        border: 2px solid #0d2388;
     }
 
     .login-content button {
         margin-top: 10px;
         width: 100%;
+
+        background-color: #0d2388;
+        border: none;
+    }
+
+    .login-content button:hover {
+        margin-top: 10px;
+        width: 100%;
+
+        background-color: #360099;
+        border: none;
+    }
+
+    .form-text {
+        color: #fafafa;
     }
 
     .align-center {
@@ -62,19 +132,6 @@ export default {
         width: 100%;
         align-items: center;
         justify-content: center;
-    }
-
-    .logo {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-        gap: 2px;
-    }
-
-    .icon {
-        width: 40px;
     }
 
 </style>
