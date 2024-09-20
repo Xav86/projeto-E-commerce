@@ -1,13 +1,11 @@
 <template>
   <div class="background">
     <div class="login">
-        <div v-if="this.error">
-            <div class="alert alert-danger d-flex align-items-center" role="alert">
-            <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+        <div v-if="this.error" class="alert-error" role="alert">
+            <img src="@/assets/icons/exclamation-triangle-fill.svg" alt="alert Icon" class="icon">
             <div>
-                An example danger alert with an icon
+                <p>{{ textError }}</p>
             </div>
-        </div>
         </div>
         <div>
             <logoComponent />
@@ -39,7 +37,8 @@ export default {
         return {
             email: '',
             password: '',
-            error: false
+            error: false,
+            textError: ''
         }
     },
     methods: {
@@ -54,9 +53,11 @@ export default {
                 });
 
                 localStorage.setItem('token', result.data.token)
-                console.log(result)
+                this.$router.push({name: 'home'});
+
             } catch(error) {
-                console.log(error.response.data.error);
+                this.error = true;
+                this.textError = error.response.data.error;
             }
             
         }
@@ -97,6 +98,25 @@ export default {
         background-color: #fafafa;
     }
 
+    .alert-error {
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        align-items: center;
+        justify-content: center;
+
+        padding: 10px 20px;
+        margin-bottom: 17px;
+        background-color: #fa02615d;
+        border: 3px solid #ff0000;
+        border-radius: 10px;
+    }
+
+    .alert-error p {
+        margin: 0;
+        color: #fafafa;
+    }
+
     label {
         margin: 0;
         color: #0d2388;
@@ -119,8 +139,11 @@ export default {
         margin-top: 10px;
         width: 100%;
 
+        background-color: #3808bd;
+    }
+
+    .login-content button:active {
         background-color: #360099;
-        border: none;
     }
 
     .form-text {
