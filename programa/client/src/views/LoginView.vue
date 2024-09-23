@@ -14,8 +14,10 @@
             <form @submit.prevent="logar()">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" name="email" v-model="email" placeholder="Digite seu email" required>
+
                 <label for="password" class="form-label">Senha</label>
                 <input type="password" class="form-control" id="password" name="password" v-model="password" placeholder="Digite sua senha" required>
+
                 <button type="submit" class="btn btn-primary">Logar</button>
             </form>
         </div>
@@ -43,8 +45,6 @@ export default {
     },
     methods: {
         async logar() {
-            console.log("Email:", this.email);
-            console.log("Password:", this.password);
 
             try {
                 const result = await axios.post('http://localhost:8919/login', {
