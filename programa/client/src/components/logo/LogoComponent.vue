@@ -3,9 +3,10 @@
         <abbr title="Ir para pagina inicial" class="text-decoration-none">
             <router-link class="navbar-brand logo" to="/">
             
-                <h1 class="d-flex"><div class="other">Other </div>. Control</h1>
+                <h1 class="logo-text"><div class="other">Other </div>. Control</h1>
             
-            <img src="@/assets/icons/controller-white.svg" alt="Controle na logo" class="icon"></router-link>
+                <img src="@/assets/icons/controller-white.svg" alt="Controle na logo" class="icon">
+            </router-link>
         </abbr>
     </div>
 </template>
@@ -24,6 +25,11 @@ export default {
         flex-direction: row;
         align-items: center;
         gap: 2px;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: row;
     }
 
     .icon {

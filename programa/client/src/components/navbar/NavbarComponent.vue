@@ -1,16 +1,18 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-underline justify-content-center">
-      <div class="container-fluid">
-        <logoComponent />
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <linksComponent />
-          <form class="d-flex gap-2">
+    <nav class="navbar">
+        <div class="routes">
+            <div class="logo-content">
+                <logoComponent />
+            </div>
+            <div class="routes-content">
+                <linksComponent />
+            </div>
+        </div>
+        <div class="buttons">
             <cartButton />
             <loginButton />
-          </form>
         </div>
-      </div>
     </nav>
   </div>
 </template>
@@ -32,8 +34,34 @@ export default {
 </script>
 
 <style>
-  .navbar {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
+    .navbar {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+
+      background-color: #fafafa;
+      box-shadow: 0px 4px 10px #0000001a;
+    }
+
+    .routes {
+      display: flex;
+      flex-direction: row;
+
+      gap: 17px;
+
+    }
+
+    .routes-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 7px;
+      margin-right: 3px;
+    }
 
 </style>
