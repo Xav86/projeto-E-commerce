@@ -11,13 +11,20 @@
         </div>
         <div class="buttons">
             <cartButton />
-            <loginButton />
+            <div v-if="isLoged">
+                <p>pra fazer ainda</p>
+            </div>
+            <div v-else>
+              <loginButton />
+            </div>
         </div>
     </nav>
   </div>
 </template>
 
 <script>
+import axios from 'axios';
+import getToken from '@/utils/getToken.js';
 import cartButton from '@/components/buttons/cartButton.vue';
 import loginButton from '@/components/buttons/loginButton.vue';
 import logoComponent from './navItens/logoComponent.vue';
@@ -29,6 +36,26 @@ export default {
     loginButton,
     logoComponent,
     linksComponent,
+  },
+  data() {
+    return {
+      isLoged: false
+    }
+  },
+  async created() {
+      const req = getToken();
+
+      if (req) {
+          try {
+              await axios.post('http://localhost:8919/validate', {}, req);
+
+              this.isLoged = true;
+          } catch (error) {
+              this.isLoged = false;
+          }
+      } else {
+          this.isLoged = false;
+      }
   }
 }
 </script>
