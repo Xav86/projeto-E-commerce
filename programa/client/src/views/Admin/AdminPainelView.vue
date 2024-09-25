@@ -27,36 +27,37 @@ export default {
 
 <style scoped>
   .background {
-    background-image: url('@/assets/images/retro-background-adm.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
+      background-image: url('@/assets/images/retro-background-adm.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      background-attachment: fixed;
   }
 
   .container-background {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-    background-color: #000000a3;
-    color: #fafafa;
+      background-color: #000000a3;
+      color: #fafafa;
   }
 
   .menu-bar {
-    display: flex;
-    flex-wrap: wrap;
-    
-    padding: 20px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      
+      padding: 20px 40px;
 
-    background-color: #fafafa;
-    color: #0d2388;
-    border-radius: 10px;
+      background-color: #fafafa;
+      color: #0d2388;
+      border-radius: 10px;
   }
 
   .menu-itens p {
-    margin: 0;
+      margin: 0;
   }
 </style>
