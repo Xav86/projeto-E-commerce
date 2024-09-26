@@ -62,33 +62,32 @@ export default {
 
 <style>
     .navbar {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: nowrap;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
 
-      background-color: #fafafa;
-      box-shadow: 0px 4px 10px #0000001a;
+        background-color: #fafafa;
+        box-shadow: 0px 4px 10px #0000001a;
     }
 
     .routes {
-      display: flex;
-      flex-direction: row;
+        display: flex;
+        flex-direction: row;
 
-      gap: 17px;
-
+        gap: 17px;
     }
 
     .routes-content {
-      display: flex;
-      align-items: center;
+        display: flex;
+        align-items: center;
     }
 
     .buttons {
-      display: flex;
-      gap: 7px;
-      margin-right: 3px;
+        display: flex;
+        gap: 7px;
+        margin-right: 3px;
     }
 
 </style>

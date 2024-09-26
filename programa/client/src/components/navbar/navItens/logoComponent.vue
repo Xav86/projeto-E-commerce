@@ -48,7 +48,7 @@ export default {
 
         background-color: #fa02615d;
         border-radius: 10px;
-        border: 3px solid #ff0000;
+        border: 3px solid #ff4545;
         rotate: -5deg;
         transition: .1s;
     }

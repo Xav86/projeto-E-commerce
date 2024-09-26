@@ -57,7 +57,7 @@ export default {
 
             } catch(error) {
                 this.error = true;
-                this.textError = error.response.data.error;
+                this.textError = error.response.data.error || 'Erro desconhecido';
             }
             
         }
@@ -108,7 +108,7 @@ export default {
         padding: 10px 20px;
         margin-bottom: 17px;
         background-color: #fa02615d;
-        border: 3px solid #ff0000;
+        border: 3px solid #ff4545;
         border-radius: 10px;
     }
 

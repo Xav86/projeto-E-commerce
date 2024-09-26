@@ -94,7 +94,7 @@ export default {
     }
 
     .login-content span {
-        color: #ff0000;
+        color: #ff4545;
     }
 
     .login {

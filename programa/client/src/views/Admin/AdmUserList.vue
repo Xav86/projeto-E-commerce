@@ -3,7 +3,9 @@
         <NavbarComponent />
         <div class="container-list-user">
             <div class="list-users">
-                <CardUser :dados="dados" />
+                <div class="list">
+                    <CardUser v-for="data in dados" :key="data.USER_ID" :dados="data" />
+                </div>
             </div>
         </div>
         <FooterComponent />
@@ -11,6 +13,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+import getToken from '@/utils/getToken';
 import CardUser from '@/components/CardItens/CardUser.vue';
 import FooterComponent from '@/components/footer/footerComponent.vue';
 import NavbarComponent from '@/components/navbar/NavbarComponent.vue';
@@ -23,39 +27,20 @@ export default {
     },
     data() {
         return {
-            dados: [
-            {
-                    id: 2,
-                    email: 'gustavo@gustavo',
-                    role: 0
-                },
-                {
-                    id: 22,
-                    email: 'gustavo24@gustavo',
-                    role: 1
-                },
-                {
-                    id: 2,
-                    email: 'gustavo@gustavo',
-                    role: 0
-                },
-                {
-                    id: 22,
-                    email: 'gustavo24@gustavo',
-                    role: 1
-                },
-                {
-                    id: 2,
-                    email: 'gustavo@gustavo',
-                    role: 0
-                },
-                {
-                    id: 22,
-                    email: 'gustavo24@gustavo',
-                    role: 1
-                }
-            ]
+            dados: []
         }
+    },
+    async created() {
+        const req = getToken();
+        console.log('aaaaaaaaaaaa ',req);
+        try {
+            const result = await axios.get('http://localhost:8919/users', req);
+            
+            this.dados = result.data;
+        } catch(error) {
+            console.log(error.response.data.error)
+        }
+
     }
 }
 </script>
@@ -67,6 +52,15 @@ export default {
         background-size: cover;
         background-position-x: center;
         background-attachment: fixed;
+    }
+
+    .list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 12px;
     }
 
     .container-list-user {

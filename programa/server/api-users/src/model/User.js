@@ -180,20 +180,20 @@ class User {
     async findLogin(email, password) {
         
         if (!email  || !password) {
-            return {status: false, error: 'credenciais necessárias autenticar'};
+            return {status: false, error: 'Credenciais necessárias autenticar não preenchidas'};
         }
 
         try {
             const result = await this.findByEmail(email);
 
             if(!result.status) {
-                return {status: false, error: 'Email não encontrado'};
+                return {status: false, error: 'Email e/ou senha inválidos'};
             }
 
             const passwordMatch = await bcrypt.compare(password, result.data.PASSWORD);
 
             if (!passwordMatch) {
-                return {status: false, error: 'Senha incorreta'};
+                return {status: false, error: 'Email e/ou senha inválidos'};
             }
 
             return {status: true, data: result.data};
