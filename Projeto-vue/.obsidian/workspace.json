@@ -13,11 +13,11 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Users.canvas",
+                "file": "Projeto-Vue.canvas",
                 "viewState": {
-                  "x": 75.64365482233498,
-                  "y": 77.99949238578685,
-                  "zoom": -0.5433577008634431
+                  "x": 339.5,
+                  "y": -890,
+                  "zoom": -2.126967362903004
                 }
               }
             }
@@ -88,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Users.canvas",
+                "file": "Projeto-Vue.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Users.canvas",
+                "file": "Projeto-Vue.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Users.canvas"
+                "file": "Projeto-Vue.canvas"
               }
             }
           },
@@ -159,8 +159,12 @@
   },
   "active": "286d0ea3aaf950c7",
   "lastOpenFiles": [
-    "Projeto-Vue.canvas",
     "Users.canvas",
+    "Projeto-Vue.canvas",
+    "Edição de senha.md",
+    "Edição de Usuário.md",
+    "Listagem de Usuários.md",
+    "Painel Administrativo.md",
     "Sem título.md",
     "Sem título.canvas",
     "About.md",
