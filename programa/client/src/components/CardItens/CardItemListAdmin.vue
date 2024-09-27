@@ -1,5 +1,5 @@
 <template>
-    <router-link class="edit-link" data-bs-toggle="modal" data-bs-target="#product">
+    <div class="edit-link" data-bs-toggle="modal" data-bs-target="#product">
         <div class="list-produtcs">
             <img src="@/assets/images/150x95.png" alt="Imagem do produto" class="image-product">
             <div class="space-between-here">
@@ -10,7 +10,7 @@
                 <p>R$00,00</p>
             </div>
         </div>
-    </router-link>
+      </div>
 </template>
 
 <script>

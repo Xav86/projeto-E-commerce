@@ -90,4 +90,16 @@ export default {
         margin-right: 3px;
     }
 
+    @media (max-width: 490px) {
+        .routes {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .navbar {
+            gap: 10px;
+        }
+    }
+
 </style>

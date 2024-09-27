@@ -53,10 +53,15 @@ export default {
 
         border-radius: 10px;
         background-color: #0d2388;
+        border: 7px solid #3808bd;
+
+        transition: all .2s;
     }
 
     .item:hover {
+        transform: translateY(-10px);
         background-color: #3808bd;
+        border: 7px solid #0d2388;
         cursor: pointer;
     }
 </style>

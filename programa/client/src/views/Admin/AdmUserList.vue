@@ -32,7 +32,7 @@ export default {
     },
     async created() {
         const req = getToken();
-        console.log('aaaaaaaaaaaa ',req);
+
         try {
             const result = await axios.get('http://localhost:8919/users', req);
             
@@ -60,7 +60,7 @@ export default {
         flex-direction: column;
         align-items: center;
 
-        gap: 12px;
+        gap: 10px;
     }
 
     .container-list-user {
@@ -80,6 +80,13 @@ export default {
         justify-content: center;
 
         padding: 30px 0;
+        transition: .2s;
+    }
+
+    @media (max-width: 800px) {
+        .list-users {
+            width: 100%;
+        }
     }
 
 
