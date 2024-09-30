@@ -39,6 +39,17 @@
 
         position: relative;
     }
+
+    /* a.router-link-exact-active {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        height: 2px;
+        width: 0;
+        background-color: #000;
+        transition: width .3s;
+    } */
     
     .nav-link-iten-admin {
         display: flex;
